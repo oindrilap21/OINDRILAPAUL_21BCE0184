@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitwicket Game</title>
+    <style>
+        .grid-cell {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(5, 50px);
+            grid-gap: 5px;
+        }
+        #controls {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hitwicket Game</h1>
+    <div id="game-board"></div>
+    <div id="controls">
+        <div id="player-a-controls">
+            <input type="text" id="player-a-move" placeholder="Player A move (e.g., P1:L)">
+            <button id="player-a-submit">Submit Move</button>
+        </div>
+        <div id="player-b-controls" style="display: none;">
+            <input type="text" id="player-b-move" placeholder="Player B move (e.g., P1:L)">
+            <button id="player-b-submit">Submit Move</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
